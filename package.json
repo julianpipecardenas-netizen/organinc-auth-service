@@ -1,0 +1,19 @@
+{
+  "name": "organinc-auth-service",
+  "version": "1.0.0",
+  "description": "Microservicio de autenticación de 3D Organ Inc. Expone /api/register y /api/login, valida credenciales contra una tabla users en Supabase (Postgres) y entrega un JWT para la app React Native.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
